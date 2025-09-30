@@ -10,9 +10,22 @@
 		43636AC22E8BACD8005F8318 /* heartbeatFetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = heartbeatFetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		43B0065B2E8BB26B004EFE2E /* Exceptions for "heartbeatFetal" folder in "heartbeatFetal" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 43636AC12E8BACD8005F8318 /* heartbeatFetal */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		43636AC42E8BACD8005F8318 /* heartbeatFetal */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				43B0065B2E8BB26B004EFE2E /* Exceptions for "heartbeatFetal" folder in "heartbeatFetal" target */,
+			);
 			path = heartbeatFetal;
 			sourceTree = "<group>";
 		};
@@ -256,11 +269,16 @@
 				DEVELOPMENT_TEAM = 6PN64DQKLX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = heartbeatFetal/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow to connect MFi devices";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow to connect MFi devices";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Use microphone to capture heartbeat!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -288,11 +306,16 @@
 				DEVELOPMENT_TEAM = 6PN64DQKLX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = heartbeatFetal/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow to connect MFi devices";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow to connect MFi devices";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Use microphone to capture heartbeat!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
