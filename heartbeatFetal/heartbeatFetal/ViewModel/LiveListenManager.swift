@@ -16,6 +16,16 @@ class LiveListenManager {
     func start() {
         do {
             let audioSession = AVAudioSession.sharedInstance()
+            try audioSession.setCategory(.playAndRecord, mode: .default, options: [.allowBluetooth, .defaultToSpeaker])
+            
+            guard let builtInMic = AVAudioSession.sharedInstance().availableInputs?.first(where: {
+                $0.portType == .builtInMic
+            }) else {
+                print("Built-in mic not found")
+                return
+            }
+            
+            try audioSession.setPreferredInput(builtInMic)
             try audioSession.setActive(true)
             currentOutputDeviceName = audioSession.currentRoute.outputs.first?.portName
 
